@@ -1,0 +1,143 @@
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2e0f38, #1a2c54);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main App Container */
+.app {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Header */
+h1 {
+  color: #b45dbb;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.count {
+  font-weight: bold;
+  color: #8351a8;
+  font-size: 18px;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4d7b93;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+input:focus {
+  background: #5d8fa5;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  background: #b45dbb;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8351a8;
+}
+
+/* Error Message */
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.project-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+
+/* Delete Icon */
+.delete-icon {
+  color: #ff4d4d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-icon:hover {
+  color: #ff7878;
+}
+
+/* Clear Button */
+.clear-btn {
+  margin-top: 20px;
+  background: #ff4d4d;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.clear-btn:hover {
+  background: #ff7878;
+}
